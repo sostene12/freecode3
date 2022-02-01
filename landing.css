@@ -1,0 +1,225 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+:root {
+  --yellow: darkorange;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+#header img {
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-self: space-around;
+}
+#nav-bar ul li {
+  display: flex;
+  list-style: none;
+  margin-right: 10rem;
+}
+#nav-bar ul li a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-cont {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70vw;
+}
+.form-cont form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+form input[type="email"] {
+  width: 500px;
+  height: 30px;
+  padding: 1rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 3px solid #ccc;
+}
+form input[type="submit"] {
+  background-color: var(--yellow);
+  color: black;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+#description {
+  width: 70vw;
+  margin-top: 2rem;
+
+  margin-bottom: 2rem;
+}
+#description .icon {
+  display: flex;
+  color: var(--yellow);
+  height: 125px;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: flex;
+  align-items: center;
+}
+.grid div {
+  padding: 0.5rem;
+}
+#video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 50vw;
+}
+iframe {
+  max-width: 560px;
+  width: 100%;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 70vw;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #ddd;
+}
+#footer ul {
+  display: flex;
+  margin-bottom: 00.5rem;
+  background-color: none;
+  padding: 0.5rem;
+  background-color: transparent;
+}
+#footer ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 1rem;
+  background-color: none;
+}
+#footer ul li a {
+  text-decoration: none;
+  background-color: #ddd;
+  color: black;
+}
+#footer span {
+  color: #444;
+  background-color: transparent;
+}
+
+#price {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 70vw;
+}
+
+.head {
+  background-color: #dddd;
+  width: 100%;
+  width: inherit;
+  text-align: center;
+  font-weight: 800;
+  padding: 00.5rem;
+}
+#price .price-each {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-right: 0.8rem;
+}
+.price-each ul {
+  list-style: none;
+  padding: 1rem 0;
+  text-align: center;
+}
+.price-each ul li {
+  background-color: none;
+}
+.price-each button {
+  background-color: var(--yellow);
+  width: 100px;
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 100;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 30%;
+  }
+  #price {
+    flex-direction: column;
+    align-items: center;
+  }
+  #price .price-each {
+    margin: 0.8rem 0;
+  }
+  #description .icon {
+    display: none;
+  }
+  #video {
+    width: 80%;
+  }
+  .form-cont {
+    width: 80;
+  }
+  form input[type="email"] {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+}
